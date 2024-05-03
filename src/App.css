@@ -25,3 +25,9 @@
 .MainPage {
   margin-top: 5%;
 }
+
+@media (max-width: 530px) {
+  .MainPage {
+    margin-top: 15%;
+  }
+}

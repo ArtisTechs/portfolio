@@ -47,13 +47,13 @@ export const NavBar = () => {
             </Nav.Link>
             <Nav.Link href="#contact" className="nav-link">
               <span>Contact</span>
-              {showGravatar && (
+              {/* {showGravatar && (
                 <Gravatar
                   className="rounded-circle ms-2"
                   email="suarezestanislaojose@gmail.com"
                   size={35}
                 />
-              )}
+              )} */}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

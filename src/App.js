@@ -15,6 +15,7 @@ function App() {
       <div className="MainPage">
         <HomePage />
         <HomePage />
+        <HomePage />
       </div>
     </div>
   );

@@ -6,23 +6,26 @@
   text-align: center;
 }
 
-.background {
+.intro-container {
   background-color: rgba(255, 255, 255, 0.767);
   background-position: center;
   width: 60%;
   height: 40vh;
   display: flex;
+  overflow: visible;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border: 3px solid var(--dark-color);
+  box-shadow: var(--soft-shadow);
+  position: relative;
 }
 
 .content {
   font-family: "Inter", sans-serif;
-  color: rgb(66, 66, 66);
+  color: var(--dark-color);
 }
 
 .content h1 {
@@ -34,8 +37,22 @@
   margin-top: 20px;
 }
 
-@media (max-width: 789px) {
-  .background {
+.avatar-container {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: -9rem;
+  border: 3px solid var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  /* box-shadow: var(--soft-shadow); */
+}
+
+@media (max-width: 794px) {
+  .intro-container {
     width: 70%;
     height: 40vh;
   }
@@ -43,10 +60,13 @@
   .blue-button {
     width: 150px !important;
   }
+  .avatar-container {
+    top: -9rem;
+  }
 }
 
 @media (max-width: 530px) {
-  .background {
+  .intro-container {
     width: 80%;
     height: 60vh !important;
     padding: 2rem 1rem;
@@ -60,6 +80,11 @@
   }
   .common-button,
   .blue-button {
-    margin: 5px 0;
+    margin-top: 10px !important;
+  }
+  .avatar-container {
+    height: 180px;
+    width: 180px;
+    top: -7rem;
   }
 }
