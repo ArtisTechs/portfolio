@@ -5,7 +5,7 @@ const BackgroundPage = () => {
   useEffect(() => {
     // Load particles.js script
     const script = document.createElement("script");
-    script.src = "http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
+    script.src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
     script.async = true;
     script.onload = initializeParticles;
     document.body.appendChild(script);
