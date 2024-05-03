@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ArtisTechs/portfolio.git/static/css/main.9fa5aa86.css",
+    "main.js": "/ArtisTechs/portfolio.git/static/js/main.2b627ddb.js",
+    "static/js/453.d3710559.chunk.js": "/ArtisTechs/portfolio.git/static/js/453.d3710559.chunk.js",
+    "index.html": "/ArtisTechs/portfolio.git/index.html",
+    "main.9fa5aa86.css.map": "/ArtisTechs/portfolio.git/static/css/main.9fa5aa86.css.map",
+    "main.2b627ddb.js.map": "/ArtisTechs/portfolio.git/static/js/main.2b627ddb.js.map",
+    "453.d3710559.chunk.js.map": "/ArtisTechs/portfolio.git/static/js/453.d3710559.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fa5aa86.css",
+    "static/js/main.2b627ddb.js"
+  ]
+}
