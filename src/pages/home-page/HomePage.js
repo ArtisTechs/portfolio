@@ -12,13 +12,16 @@ const HomePage = () => {
         </div>
         <div className="content">
           <h1>Hello, I'm EJ Suarez</h1>
-          <p>
-            I'm a web developer and UI/UX designer working to enhance online
-            presence for businesses.
+          <p className="w-100">
+            A front-end web developer and graphic designer
           </p>
           <div className="buttons">
-            <button className="common-button">Download CV</button>
-            <button className="blue-button">Get in touch</button>
+            <button className="common-button homepage-button">
+              Sample Works
+            </button>
+            <button className="blue-button homepage-button">
+              Get in touch
+            </button>
           </div>
         </div>
       </div>
