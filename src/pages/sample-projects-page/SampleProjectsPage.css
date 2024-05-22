@@ -1,0 +1,9 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  border-top: 3px solid var(--dark-color);
+  border-bottom: 3px solid var(--dark-color);
+  box-shadow: var(--soft-shadow);
+  padding: 3rem;
+}

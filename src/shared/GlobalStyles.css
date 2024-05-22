@@ -29,7 +29,6 @@
 .blue-button:hover {
   background-color: var(--dark-color);
   transform: scale(1.05);
-  font-weight: bold;
 }
 
 .blue-button {

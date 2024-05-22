@@ -23,11 +23,11 @@
 }
 
 .MainPage {
-  margin-top: 5%;
+  margin-top: 3rem;
 }
 
 @media (max-width: 530px) {
   .MainPage {
-    margin-top: 15%;
+    margin-top: 0;
   }
 }
