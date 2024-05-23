@@ -5,5 +5,48 @@
   border-top: 3px solid var(--dark-color);
   border-bottom: 3px solid var(--dark-color);
   box-shadow: var(--soft-shadow);
-  padding: 3rem;
+  padding: 1rem;
+}
+
+.sample-projects-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-radius: 20px;
+  border: 3px solid var(--dark-color);
+  margin: 1rem 0;
+}
+
+.sample-project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sample-project-title h1 {
+  margin-left: 1rem;
+}
+
+.sample-project-title .icon {
+  margin-right: 1rem;
+  height: 30px;
+}
+
+.card-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.card-row.expanded {
+  height: auto;
+  opacity: 1;
+  transform: scaleY(1);
 }
