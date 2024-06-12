@@ -27,6 +27,7 @@
 .sample-project-title h1 {
   font-size: var(--large-font);
   margin-left: 1rem;
+  margin-bottom: 0;
 }
 
 .sample-project-title .icon {
