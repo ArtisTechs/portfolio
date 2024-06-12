@@ -46,6 +46,10 @@
   font-weight: bold;
 }
 
+.content p {
+  font-size: var(--medium-font);
+}
+
 .buttons {
   margin-top: 20px;
 }

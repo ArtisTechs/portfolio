@@ -25,12 +25,13 @@
 }
 
 .sample-project-title h1 {
+  font-size: var(--large-font);
   margin-left: 1rem;
 }
 
 .sample-project-title .icon {
   margin-right: 1rem;
-  height: 30px;
+  height: 20px;
 }
 
 .card-row {

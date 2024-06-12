@@ -17,10 +17,12 @@ figure {
   overflow-wrap: break-word;
   transition: transform 0.4s ease;
 }
+
 figure > * {
   grid-area: 1/1;
   transition: 0.4s;
 }
+
 figure figcaption {
   display: grid;
   align-items: end;
@@ -35,32 +37,64 @@ figure figcaption {
   margin: -1px;
   text-align: left;
 }
-.caption p {
-  font-size: 1.5rem;
+
+.caption h1 {
+  font-size: var(--large-font);
   font-weight: bolder;
   margin: 0;
 }
+
 .subtitle {
-  font-size: 1rem;
+  font-size: var(--medium-font);
   font-weight: normal;
 }
+
+.click-more {
+  font-size: var(--small-font);
+  font-weight: bold;
+}
+
 figure:hover figcaption {
   --_i: 0%;
 }
+
 figure:hover img {
   transform: scale(1.2);
 }
+
 figure:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
+
 @supports not (-webkit-mask-clip: text) {
   figure figcaption {
     -webkit-mask: none;
     color: #fff;
   }
 }
+
 .card-container.clicked figure {
   transform: translateY(5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.initial-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  justify-content: end;
+}
+
+.initial-caption h1 {
+  font-size: var(--large-font);
+  font-weight: bolder;
+  color: var(--dark-color);
+}
+
+.initial-caption p {
+  font-size: var(--small-font);
+  font-weight: bold;
+  color: var(--dark-color);
 }
