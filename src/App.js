@@ -6,6 +6,7 @@ import HomePage from "./pages/home-page/HomePage";
 import BackgroundPage from "./pages/background-page/BackgroundPage";
 import SampleProjectsPage from "./pages/sample-projects-page/SampleProjectsPage";
 import { Link } from "react-scroll";
+import AboutMePage from "./pages/about-me-page/AboutMePage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
           <ScrollToTop />
           <HomePage />
           <SampleProjectsPage />
+          <AboutMePage />
           {/* Add additional pages here */}
         </div>
         <Link to="MainPage" smooth={true} className="scroll-to-top">
