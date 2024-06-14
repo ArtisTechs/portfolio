@@ -9,38 +9,42 @@
   --soft-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
     0px 5px 4px rgba(3, 7, 18, 0.03), 0px 12px 9px rgba(3, 7, 18, 0.05),
     0px 20px 15px rgba(3, 7, 18, 0.06), 0px 32px 24px rgba(3, 7, 18, 0.08);
+
+  --small-font: 12px;
+  --medium-font: 16px;
+  --large-font: 18px;
+  --extra-large-font: 32px;
 }
 
 .common-button,
 .blue-button {
   padding: 10px 20px;
   margin: 0 10px;
-  font-size: 1rem;
+  font-size: var(--medium-font);
   border: none;
   border-radius: 5px;
   color: white;
   cursor: pointer;
   width: 200px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .common-button:hover,
 .blue-button:hover {
-  background-color: var(--dark-color);
+  background-color: var(--dark-color) !important;
   transform: scale(1.05);
 }
 
 .blue-button {
-  background-color: var(--button-color);
+  background-color: var(--button-color) !important;
 }
 
 .blue-button:hover {
-  background-color: var(--button-dark-color);
+  background-color: var(--button-dark-color) !important;
 }
 
 .common-button:active,
 .blue-button:active {
   transform: scale(0.95);
 }
-

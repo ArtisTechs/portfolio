@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Gravatar from "react-gravatar";
 import "./NavBar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiamond } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +37,10 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">✦ ArtisTech</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <FontAwesomeIcon className="me-1" icon={faDiamond} />
+          ArtisTech
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>

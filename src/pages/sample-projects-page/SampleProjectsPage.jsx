@@ -84,7 +84,7 @@ const SampleProjectsPage = () => {
               key={project.id}
               imgSrc={project.image}
               title={project.title}
-              description={project.description}
+              description={project.subtitle}
               customStyle={project.customStyle}
               onClick={() => handleShowModal(project)}
             />
@@ -108,7 +108,7 @@ const SampleProjectsPage = () => {
               key={project.id}
               imgSrc={project.image}
               title={project.title}
-              description={project.description}
+              description={project.subtitle}
               customStyle={project.customStyle}
               onClick={() => handleShowModal(project)}
             />
@@ -132,20 +132,31 @@ const SampleProjectsPage = () => {
               key={project.id}
               imgSrc={project.image}
               title={project.title}
-              description={project.description}
+              description={project.subtitle}
               customStyle={project.customStyle}
               onClick={() => handleShowModal(project)}
             />
           ))}
         </div>
       </div>
-      <Modal show={showModal} onHide={handleCloseModal}>
+      <Modal
+        className="custom-modal"
+        show={showModal}
+        onHide={handleCloseModal}
+      >
         <Modal.Header closeButton>
           <Modal.Title>{selectedProject?.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{selectedProject?.description}</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
+        <Modal.Body>
+          <p>{selectedProject?.description}</p>
+          <img src={selectedProject?.image} alt="" />
+        </Modal.Body>
+        <Modal.Footer className="modal-footer">
+          <Button
+            className="common-button"
+            variant="secondary"
+            onClick={handleCloseModal}
+          >
             Close
           </Button>
         </Modal.Footer>
