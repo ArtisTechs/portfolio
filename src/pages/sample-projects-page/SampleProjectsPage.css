@@ -15,17 +15,18 @@
   border-radius: 20px;
   border: 3px solid var(--dark-color);
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .sample-project-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 
 .sample-project-title h1 {
   font-size: var(--large-font);
+  font-weight: bold;
   margin-left: 1rem;
   margin-bottom: 0;
 }
@@ -75,4 +76,10 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+@media (max-width: 576px) {
+  .custom-modal .modal-dialog {
+    max-width: 95%;
+  }
 }
