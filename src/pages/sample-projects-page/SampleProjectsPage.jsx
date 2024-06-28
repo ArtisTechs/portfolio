@@ -67,8 +67,8 @@ const SampleProjectsPage = () => {
 
   return (
     <div className="projects-page">
-      <div className="sample-projects-container">
-        <div className="sample-project-title" onClick={toggleMyWork}>
+      <div className="sample-projects-container" onClick={toggleMyWork}>
+        <div className="sample-project-title">
           <h1>What I Do </h1>
           <FontAwesomeIcon
             className="icon"
@@ -91,8 +91,8 @@ const SampleProjectsPage = () => {
           ))}
         </div>
       </div>
-      <div className="sample-projects-container">
-        <div className="sample-project-title" onClick={toggleSampleWork}>
+      <div className="sample-projects-container" onClick={toggleSampleWork}>
+        <div className="sample-project-title">
           <h1>Sample Work </h1>
           <FontAwesomeIcon
             className="icon"
@@ -115,8 +115,8 @@ const SampleProjectsPage = () => {
           ))}
         </div>
       </div>
-      <div className="sample-projects-container">
-        <div className="sample-project-title" onClick={toggleTools}>
+      <div className="sample-projects-container" onClick={toggleTools}>
+        <div className="sample-project-title">
           <h1>Tools I Used </h1>
           <FontAwesomeIcon
             className="icon"

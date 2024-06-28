@@ -1,0 +1,85 @@
+.contact-us-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-us-container {
+  display: flex;
+  width: 65%;
+  min-height: 70vh;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: var(--white-color);
+  border: 3px solid var(--dark-color);
+  box-shadow: var(--soft-shadow);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.contact-us-container h1 {
+  font-size: var(--extra-large-font);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-us-container p {
+  font-size: var(--medium-font);
+}
+
+.contact-us-content h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: var(--large-font);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  font-size: var(--medium-font);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+  font-size: var(--medium-font);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.send-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--medium-font);
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: var(--primary-color-dark);
+}
