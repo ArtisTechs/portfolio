@@ -9,7 +9,7 @@
 .contact-us-container {
   display: flex;
   width: 65%;
-  min-height: 70vh;
+  min-height: 50vh;
   flex-direction: column;
   padding: 2rem;
   border-radius: 20px;
@@ -66,7 +66,7 @@
 }
 
 .form-group textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .send-button {
@@ -82,4 +82,10 @@
 
 .send-button:hover {
   background-color: var(--primary-color-dark);
+}
+
+@media (max-width: 576px) {
+  .contact-us-container {
+    width: 90%;
+  }
 }
