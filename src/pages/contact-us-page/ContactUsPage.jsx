@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import "../../shared/GlobalStyles.css";
 import "./ContactUsPage.css";
 
 const ContactUsPage = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+  };
+
   return (
     <div className="contact-us-page">
       <div className="contact-us-container">
@@ -14,30 +39,35 @@ const ContactUsPage = () => {
           </p>
         </div>
         <div className="contact-us-content">
-          <h1>Contact</h1>
-          <form className="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">
+                Name <span className="text-danger">*</span>
+              </label>
               <input
                 type="text"
-                id="name"
-                name="name"
-                placeholder="John Doe"
+                id="user_name"
+                name="user_name"
+                placeholder="Your Name"
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">
+                Email <span className="text-danger">*</span>
+              </label>
               <input
                 type="email"
-                id="email"
-                name="email"
-                placeholder="john.doe@example.com"
+                id="user_email"
+                name="user_email"
+                placeholder="youremail@domain.com"
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">
+                Message <span className="text-danger">*</span>
+              </label>
               <textarea
                 id="message"
                 name="message"
