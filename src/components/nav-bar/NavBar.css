@@ -16,6 +16,7 @@
 .navbar-brand {
   font-size: var(--large-font);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -42,4 +43,9 @@
   align-items: center;
   height: 10px;
   width: 10px;
+}
+
+/* NavBar.css */
+.nav-link span {
+  cursor: pointer;
 }

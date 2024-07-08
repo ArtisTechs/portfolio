@@ -1,5 +1,5 @@
 .contact-us-page {
-  height: 100vh;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
 .contact-us-container {
   display: flex;
   width: 65%;
-  min-height: 50vh;
+  min-height: 500px;
   flex-direction: column;
   padding: 2rem;
   border-radius: 20px;
@@ -27,6 +27,7 @@
 }
 
 .contact-us-container p {
+  justify-content: center;
   font-size: var(--medium-font);
 }
 
@@ -82,6 +83,10 @@
 
 .send-button:hover {
   background-color: var(--primary-color-dark);
+}
+
+.loading-icon {
+  margin-left: 10px;
 }
 
 @media (max-width: 576px) {

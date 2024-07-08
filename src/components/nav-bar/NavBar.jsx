@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Gravatar from "react-gravatar";
-import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiamond } from "@fortawesome/free-solid-svg-icons";
+import "./NavBar.css";
+import { SECTIONS } from "../../shared/enum/SectionsEnum";
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,28 +38,53 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand
+          as={ScrollLink}
+          to={SECTIONS.HOME}
+          smooth={true}
+          duration={10}
+        >
           <FontAwesomeIcon className="me-1" icon={faDiamond} />
-          ArtisTech
+          ArtisTechs
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="#home" className="nav-link">
-              <span>Work</span>
+            <Nav.Link
+              as={ScrollLink}
+              to={SECTIONS.HOME}
+              smooth={true}
+              duration={10}
+              className="nav-link"
+            >
+              <span>Home</span>
             </Nav.Link>
-            <Nav.Link href="#link" className="nav-link">
+            <Nav.Link
+              as={ScrollLink}
+              to={SECTIONS.PROJECTS}
+              smooth={true}
+              duration={10}
+              className="nav-link"
+            >
+              <span>Projects</span>
+            </Nav.Link>
+            <Nav.Link
+              as={ScrollLink}
+              to={SECTIONS.ABOUT}
+              smooth={true}
+              duration={10}
+              className="nav-link"
+            >
               <span>About</span>
             </Nav.Link>
-            <Nav.Link href="#contact" className="nav-link">
+            <Nav.Link
+              as={ScrollLink}
+              to={SECTIONS.CONTACT}
+              smooth={true}
+              duration={10}
+              className="nav-link"
+            >
               <span>Contact</span>
-              {/* {showGravatar && (
-                <Gravatar
-                  className="rounded-circle ms-2"
-                  email="suarezestanislaojose@gmail.com"
-                  size={35}
-                />
-              )} */}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

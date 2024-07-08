@@ -1,9 +1,10 @@
 .homepage {
-  height: 100vh;
+  height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 @keyframes fadeIn {
@@ -21,7 +22,7 @@
   background-color: var(--white-color);
   background-position: center;
   min-width: 750px;
-  min-height: 40vh;
+  min-height: 350px;
   display: flex;
   overflow: visible;
   justify-content: center;
@@ -47,6 +48,7 @@
 }
 
 .content p {
+  justify-content: center;
   font-size: var(--medium-font);
 }
 
@@ -71,7 +73,7 @@
 @media (max-width: 768px) {
   .intro-container {
     min-width: 500px;
-    height: 80vh;
+    height: 700px;
     flex-direction: column;
   }
   .homepage-button {
@@ -89,7 +91,7 @@
 @media (max-width: 576px) {
   .intro-container {
     min-width: 300px;
-    height: 85vh !important;
+    height: 600px !important;
     padding: 2rem 1rem;
   }
   .content h1 {
@@ -116,7 +118,7 @@
 @media (max-width: 410px) {
   .intro-container {
     width: 200px;
-    height: 70vh !important;
+    height: 600px !important;
     padding: 2rem 1rem;
   }
   .avatar-container {
