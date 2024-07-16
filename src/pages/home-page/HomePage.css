@@ -39,6 +39,7 @@
 .content {
   font-family: "Monsterat", sans-serif;
   color: var(--dark-color);
+  margin-left: 20px;
 }
 
 .content h1 {
@@ -71,6 +72,9 @@
 }
 
 @media (max-width: 768px) {
+  .content {
+  margin-left: 0;
+}
   .intro-container {
     min-width: 500px;
     height: 700px;

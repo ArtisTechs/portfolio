@@ -82,7 +82,7 @@ const SampleProjectsPage = () => {
           {myWorks.map((project) => (
             <CustomCard
               key={project.id}
-              imgSrc={project.image}
+              imgSrc={project.images[0]}
               title={project.title}
               description={project.subtitle}
               customStyle={project.customStyle}
@@ -91,7 +91,7 @@ const SampleProjectsPage = () => {
           ))}
         </div>
       </div>
-      <div className="sample-projects-container">
+      {/* <div className="sample-projects-container">
         <div className="sample-project-title" onClick={toggleSampleWork}>
           <h1>Sample Work </h1>
           <FontAwesomeIcon
@@ -138,7 +138,7 @@ const SampleProjectsPage = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
       <Modal
         className="custom-modal"
         show={showModal}
@@ -149,7 +149,24 @@ const SampleProjectsPage = () => {
         </Modal.Header>
         <Modal.Body>
           <p>{selectedProject?.description}</p>
-          <img src={selectedProject?.image} alt="" />
+          {selectedProject?.images.length > 1 ? (
+            <div className="scrollable-images">
+              {selectedProject?.images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Image ${index}`}
+                  className="modal-images"
+                />
+              ))}
+            </div>
+          ) : (
+            <img
+              src={selectedProject?.images[0]}
+              alt=""
+              className="modal-images"
+            />
+          )}
         </Modal.Body>
         <Modal.Footer className="modal-footer">
           <Button

@@ -49,3 +49,8 @@
 .nav-link span {
   cursor: pointer;
 }
+
+.main-logo {
+  height: 40px;
+  width: 40px;
+}

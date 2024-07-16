@@ -16,6 +16,7 @@ figure {
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: transform 0.4s ease;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 figure > * {
@@ -25,7 +26,7 @@ figure > * {
 
 figure figcaption {
   display: grid;
-  align-items: flex-end; /* Changed 'end' to 'flex-end' */
+  align-items: flex-end;
   font-family: sans-serif;
   color: #0000;
   padding: 0.75rem;
@@ -85,16 +86,51 @@ figure:hover {
   align-items: flex-start;
   padding: 10px;
   justify-content: flex-end;
+  position: relative;
+}
+
+.initial-caption h1,
+.initial-caption p {
+  position: relative;
+  z-index: 2;
+}
+
+.initial-caption .white-label-background {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+figure:hover .initial-caption {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+figure:hover .initial-caption .white-label-background,
+figure:hover .initial-caption h1,
+figure:hover .initial-caption p {
+  opacity: 0;
 }
 
 .initial-caption h1 {
   font-size: var(--large-font);
   font-weight: bolder;
   color: var(--dark-color);
+  transition: opacity 0.4s ease;
 }
 
 .initial-caption p {
   font-size: var(--small-font);
   font-weight: bold;
   color: var(--dark-color);
+  transition: opacity 0.4s ease;
+}
+
+.card-image {
+  width: 250px;
+  height: 300px;
 }
