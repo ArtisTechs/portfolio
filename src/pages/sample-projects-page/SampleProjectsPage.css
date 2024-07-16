@@ -79,6 +79,21 @@
   justify-content: center !important;
 }
 
+.scrollable-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-images{
+  height:500px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: var(--soft-shadow);
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
 @media (max-width: 576px) {
   .custom-modal .modal-dialog {
     max-width: 95%;

@@ -10,17 +10,26 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const FBLink = "https://www.facebook.com/estanislao.suarez.Jr";
+  const GithubLink = "https://github.com/ArtisTechs";
+  const LinkedInLink =
+    "https://www.linkedin.com/in/estanislao-jose-suarez-015818258/";
+
+  const handleLinkClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="footer-container">
       <div className="footer-content">
         <div className="footer-links">
-          <button>
+          <button onClick={() => handleLinkClick(GithubLink)}>
             <FontAwesomeIcon icon={faGithub} className="link-icon" />
           </button>
-          <button>
+          <button onClick={() => handleLinkClick(LinkedInLink)}>
             <FontAwesomeIcon icon={faLinkedin} className="link-icon" />
           </button>
-          <button>
+          <button onClick={() => handleLinkClick(FBLink)}>
             <FontAwesomeIcon icon={faFacebook} className="link-icon" />
           </button>
         </div>

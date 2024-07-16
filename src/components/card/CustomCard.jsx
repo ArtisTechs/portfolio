@@ -19,8 +19,13 @@ const CustomCard = ({ imgSrc, title, description, customStyle, onClick }) => {
         onClick={handleClick}
         className={clicked ? "clicked" : ""}
       >
-        <img src={imgSrc} alt={title} className={clicked ? "clicked" : ""} />
+        <img
+          src={imgSrc}
+          alt={title}
+          className={`card-image ${clicked ? "clicked" : ""}`}
+        />
         <div className="initial-caption">
+          <div className="white-label-background"></div>
           <h1>{title}</h1>
           <p>
             Find out more

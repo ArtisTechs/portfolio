@@ -1,9 +1,10 @@
 .about-me-page {
-  height: 800px;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .about-me-container {

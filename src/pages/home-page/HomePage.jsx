@@ -23,14 +23,14 @@ const HomePage = () => {
         <div className="content">
           <h1>Hello, I'm EJ Suarez</h1>
           <p className="w-100">
-            A front-end web developer and graphic designer
+            A Web Developer Crafting Solutions to Enhance Your Online Presence
           </p>
           <div className="buttons">
             <button
               className="common-button homepage-button"
               onClick={() => scrollToSection(SECTIONS.PROJECTS)}
             >
-              Sample Works
+              What I do
             </button>
             <button
               className="blue-button homepage-button"
