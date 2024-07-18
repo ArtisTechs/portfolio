@@ -8,30 +8,22 @@ const AboutMePage = () => {
       <div className="about-me-container">
         <h1>About Me</h1>
         <p>
-          I am a passionate computer engineering graduate with Latin honors,
-          driven by a lifelong love for programming and software development.
-          During my internship, I earned certifications in web development and
-          cloud computing, further fueling my enthusiasm for technology.
+          Ever since I was a kid, I've had a deep love for art. It wasn't until
+          my high school days that I discovered programming, and it quickly
+          became a passion alongside my artistic interests.
         </p>
         <p>
-          Currently, I work as a junior software engineer in the Philippines,
-          focusing on coding and implementing new features for a timekeeping app
-          and website. My college experience includes being the main developer
-          of a prototype, a firefighting robot that is capable of autonomously
-          extinguishing fires, and it went viral online.
+          As a computer engineering graduate with Latin honors, I've gained
+          extensive experience in web development and cloud computing. Currently
+          working as a junior software engineer in the Philippines, I specialize
+          in creating interactive, user-friendly web applications various
+          development tools.
         </p>
         <p>
-          I enjoy creating interactive and user-friendly web applications,
-          specializing in Angular and React frameworks. Proficient in
-          JavaScript, TypeScript, and Bootstrap, I also have foundational
-          knowledge of Python, C#, and Java. I am dedicated to continuous
-          learning and collaboration, eager to expand my skill set in evolving
-          technologies.
-        </p>
-        <p>
-          Looking forward, I aim to advance into project management roles,
-          leveraging my technical expertise to lead teams and drive innovative
-          projects aligned with business objectives.
+          My goal is to empower artists and creatives with professional,
+          captivating websites to showcase their work. I'm motivated to
+          transition into project management, utilizing my technical skills to
+          lead innovative projects aligned with business objectives.
         </p>
       </div>
     </div>

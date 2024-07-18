@@ -97,5 +97,6 @@
 @media (max-width: 576px) {
   .custom-modal .modal-dialog {
     max-width: 95%;
+    padding: 0 !important;
   }
 }

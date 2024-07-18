@@ -1,0 +1,49 @@
+.basic-modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-modal-content h1 {
+  font-size: var(--large-font);
+  margin-bottom: 1rem;
+}
+
+.basic-modal-content p {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.basic-modal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  border: 3px solid var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.modal-list {
+  margin-top: 1rem;
+}
+
+.modal-list h1 {
+  font-size: var(--large-font);
+}
+
+.check-icon {
+  color: black;
+  margin-right: 8px;
+}
+
+.modal-list-items {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.modal-list-items li {
+  margin-bottom: 10px;
+}
+

@@ -8,6 +8,7 @@ import CustomCard from "../../components/card/CustomCard";
 import SampleProjectsData from "../../shared/data/SampleProjectsData";
 import MyWorkData from "../../shared/data/MyWorkData";
 import ToolsUsedData from "../../shared/data/ToolsUsedData";
+import BasicModalContent from "../../components/basic-modal-content/BasicModalContent";
 
 const SampleProjectsPage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -82,7 +83,7 @@ const SampleProjectsPage = () => {
           {myWorks.map((project) => (
             <CustomCard
               key={project.id}
-              imgSrc={project.images[0]}
+              imgSrc={project.cardPhoto}
               title={project.title}
               description={project.subtitle}
               customStyle={project.customStyle}
@@ -148,25 +149,14 @@ const SampleProjectsPage = () => {
           <Modal.Title>{selectedProject?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>{selectedProject?.description}</p>
-          {selectedProject?.images.length > 1 ? (
-            <div className="scrollable-images">
-              {selectedProject?.images.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`Image ${index}`}
-                  className="modal-images"
-                />
-              ))}
-            </div>
-          ) : (
-            <img
-              src={selectedProject?.images[0]}
-              alt=""
-              className="modal-images"
-            />
-          )}
+          <BasicModalContent
+            icon={selectedProject?.icon}
+            images={selectedProject?.images}
+            listDescription={selectedProject?.listDescription}
+            list={selectedProject?.list}
+            description={selectedProject?.description}
+            subtitle={selectedProject?.modalSubtitle}
+          />
         </Modal.Body>
         <Modal.Footer className="modal-footer">
           <Button
