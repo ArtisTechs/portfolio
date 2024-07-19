@@ -22,28 +22,28 @@ const BasicModalContent = ({
   const defaultIcon = faQuestion;
 
   return (
-    <Modal.Body>
-      <div className="basic-modal-content">
-        <h1 dangerouslySetInnerHTML={{ __html: subtitle }} />
-        <div className="basic-modal-icon">
-          <FontAwesomeIcon icon={icon || defaultIcon} size="2x" />
+    <div className="basic-modal-content">
+      {subtitle && <h1 dangerouslySetInnerHTML={{ __html: subtitle }} />}
+      <div className="basic-modal-icon">
+        <FontAwesomeIcon icon={icon || defaultIcon} size="2x" />
+      </div>
+      {description && <div dangerouslySetInnerHTML={{ __html: description }} />}
+      {images && images.length > 0 && (
+        <div className="modal-images-container">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${index}`}
+              className="modal-image"
+            />
+          ))}
         </div>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
-        {images && (
-          <div className="modal-images-container">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Image ${index}`}
-                className="modal-image"
-              />
-            ))}
-          </div>
-        )}
+      )}
+      {listDescription && (
         <div className="modal-list">
           <h1 dangerouslySetInnerHTML={{ __html: listDescription }} />
-          {list && (
+          {list && list.length > 0 && (
             <ul className="modal-list-items">
               {list.map((item, index) => (
                 <li key={index}>
@@ -54,8 +54,8 @@ const BasicModalContent = ({
             </ul>
           )}
         </div>
-      </div>
-    </Modal.Body>
+      )}
+    </div>
   );
 };
 

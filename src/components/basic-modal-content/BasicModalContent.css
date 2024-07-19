@@ -1,17 +1,12 @@
 .basic-modal-content {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .basic-modal-content h1 {
   font-size: var(--large-font);
   margin-bottom: 1rem;
-}
-
-.basic-modal-content p {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 }
 
 .basic-modal-icon {

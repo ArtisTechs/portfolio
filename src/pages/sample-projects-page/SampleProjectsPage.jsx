@@ -68,78 +68,84 @@ const SampleProjectsPage = () => {
 
   return (
     <div className="projects-page">
-      <div className="sample-projects-container">
-        <div className="sample-project-title" onClick={toggleMyWork}>
-          <h1>What I Do </h1>
-          <FontAwesomeIcon
-            className="icon"
-            icon={showMyWork ? faChevronUp : faChevronDown}
-          />
-        </div>
-        <div
-          ref={cardRowMyWork}
-          className={`card-row ${showMyWork ? "expanded" : ""}`}
-        >
-          {myWorks.map((project) => (
-            <CustomCard
-              key={project.id}
-              imgSrc={project.cardPhoto}
-              title={project.title}
-              description={project.subtitle}
-              customStyle={project.customStyle}
-              onClick={() => handleShowModal(project)}
+      {myWorks.length > 0 && (
+        <div className="sample-projects-container">
+          <div className="sample-project-title" onClick={toggleMyWork}>
+            <h1>What I Do</h1>
+            <FontAwesomeIcon
+              className="icon"
+              icon={showMyWork ? faChevronUp : faChevronDown}
             />
-          ))}
+          </div>
+          <div
+            ref={cardRowMyWork}
+            className={`card-row ${showMyWork ? "expanded" : ""}`}
+          >
+            {myWorks.map((project) => (
+              <CustomCard
+                key={project.id}
+                imgSrc={project.cardPhoto}
+                title={project.title}
+                description={project.subtitle}
+                customStyle={project.customStyle}
+                onClick={() => handleShowModal(project)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      {/* <div className="sample-projects-container">
-        <div className="sample-project-title" onClick={toggleSampleWork}>
-          <h1>Sample Work </h1>
-          <FontAwesomeIcon
-            className="icon"
-            icon={showSampleWork ? faChevronUp : faChevronDown}
-          />
-        </div>
-        <div
-          ref={cardRowSampleWork}
-          className={`card-row ${showSampleWork ? "expanded" : ""}`}
-        >
-          {sampleProjects.map((project) => (
-            <CustomCard
-              key={project.id}
-              imgSrc={project.image}
-              title={project.title}
-              description={project.subtitle}
-              customStyle={project.customStyle}
-              onClick={() => handleShowModal(project)}
+      )}
+      {sampleProjects.length > 0 && (
+        <div className="sample-projects-container">
+          <div className="sample-project-title" onClick={toggleSampleWork}>
+            <h1>Sample Work</h1>
+            <FontAwesomeIcon
+              className="icon"
+              icon={showSampleWork ? faChevronUp : faChevronDown}
             />
-          ))}
+          </div>
+          <div
+            ref={cardRowSampleWork}
+            className={`card-row ${showSampleWork ? "expanded" : ""}`}
+          >
+            {sampleProjects.map((project) => (
+              <CustomCard
+                key={project.id}
+                imgSrc={project.cardPhoto}
+                title={project.title}
+                description={project.subtitle}
+                customStyle={project.customStyle}
+                onClick={() => handleShowModal(project)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="sample-projects-container">
-        <div className="sample-project-title" onClick={toggleTools}>
-          <h1>Tools I Used </h1>
-          <FontAwesomeIcon
-            className="icon"
-            icon={showTools ? faChevronUp : faChevronDown}
-          />
-        </div>
-        <div
-          ref={cardRowTools}
-          className={`card-row ${showTools ? "expanded" : ""}`}
-        >
-          {toolsUsed.map((project) => (
-            <CustomCard
-              key={project.id}
-              imgSrc={project.image}
-              title={project.title}
-              description={project.subtitle}
-              customStyle={project.customStyle}
-              onClick={() => handleShowModal(project)}
+      )}
+      {toolsUsed.length > 0 && (
+        <div className="sample-projects-container">
+          <div className="sample-project-title" onClick={toggleTools}>
+            <h1>Tools I Used</h1>
+            <FontAwesomeIcon
+              className="icon"
+              icon={showTools ? faChevronUp : faChevronDown}
             />
-          ))}
+          </div>
+          <div
+            ref={cardRowTools}
+            className={`card-row ${showTools ? "expanded" : ""}`}
+          >
+            {toolsUsed.map((project) => (
+              <CustomCard
+                key={project.id}
+                imgSrc={project.cardPhoto}
+                title={project.title}
+                description={project.subtitle}
+                customStyle={project.customStyle}
+                onClick={() => handleShowModal(project)}
+              />
+            ))}
+          </div>
         </div>
-      </div> */}
+      )}
       <Modal
         className="custom-modal"
         show={showModal}
