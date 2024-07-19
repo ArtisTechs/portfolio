@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d6fc85b4.css",
-    "main.js": "/portfolio/static/js/main.c50f6401.js",
+    "main.css": "/portfolio/static/css/main.229b4eae.css",
+    "main.js": "/portfolio/static/js/main.ad56ff19.js",
     "static/js/453.d3710559.chunk.js": "/portfolio/static/js/453.d3710559.chunk.js",
     "static/media/web-development-2.png": "/portfolio/static/media/web-development-2.5ce816ae613e9eb50d2c.png",
+    "static/media/design-tools.png": "/portfolio/static/media/design-tools.33536a9e6de3d9bee344.png",
+    "static/media/web-design-1.png": "/portfolio/static/media/web-design-1.0150c2ee19dddd41e649.png",
     "static/media/web-development-1.jpg": "/portfolio/static/media/web-development-1.152f47fa72821e33bd36.jpg",
+    "static/media/development-tools.png": "/portfolio/static/media/development-tools.61a4f5647da26b0de19f.png",
     "static/media/artisTechs-logo.svg": "/portfolio/static/media/artisTechs-logo.ab3ab4e975e4dec07025ca5aabd2c630.svg",
     "index.html": "/portfolio/index.html",
-    "main.d6fc85b4.css.map": "/portfolio/static/css/main.d6fc85b4.css.map",
-    "main.c50f6401.js.map": "/portfolio/static/js/main.c50f6401.js.map",
+    "main.229b4eae.css.map": "/portfolio/static/css/main.229b4eae.css.map",
+    "main.ad56ff19.js.map": "/portfolio/static/js/main.ad56ff19.js.map",
     "453.d3710559.chunk.js.map": "/portfolio/static/js/453.d3710559.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6fc85b4.css",
-    "static/js/main.c50f6401.js"
+    "static/css/main.229b4eae.css",
+    "static/js/main.ad56ff19.js"
   ]
 }
