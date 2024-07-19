@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const FBLink = "https://www.facebook.com/estanislao.suarez.Jr";
+  const FBLink = "https://www.facebook.com/ej.suarez.jr.2024";
   const GithubLink = "https://github.com/ArtisTechs";
   const LinkedInLink =
     "https://www.linkedin.com/in/estanislao-jose-suarez-015818258/";
