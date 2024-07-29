@@ -38,15 +38,15 @@
   width: 100%;
 }
 
-p {
+.footer-content p {
   display: flex;
   align-items: center;
 }
 
-p span {
+.footer-content p span {
   margin-right: 8px;
 }
 
-p .separator {
+.footer-content p .separator {
   margin: 0 8px;
 }

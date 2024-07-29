@@ -45,7 +45,6 @@ const ToolsUsedData = [
       "Canva",
       "Adobe Animate",
       "Sketch",
-      "Traditional Sketch",
     ],
   },
 

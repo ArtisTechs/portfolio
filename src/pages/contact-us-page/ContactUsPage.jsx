@@ -60,7 +60,7 @@ const ContactUsPage = () => {
           <h1>Interested in working together?</h1>
           <p>
             Feel free to reach out if you're interested in collaborating on a
-            project.
+            project or if you have any inquiries.
           </p>
         </div>
         <div className="contact-us-content">

@@ -23,8 +23,8 @@ const HomePage = () => {
         <div className="content">
           <h1>Hello, I'm EJ Suarez</h1>
           <p className="w-100">
-            A creative programmer dedicated to crafting personalized portfolio
-            websites that elevate Artists and Creatives online presence.
+            A passionate and dedicated <b>Web Developer</b> with a love for
+            creating interactive and user-friendly web applications.
           </p>
           <div className="buttons">
             <button
