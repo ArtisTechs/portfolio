@@ -24,8 +24,10 @@ const HomePage = () => {
         <div className="content">
           <h1>Hello, I'm EJ Suarez</h1>
           <p className="w-100">
-            A passionate and dedicated <b>Web Developer</b> with a love for
+            A passionate and dedicated <b>Web/App Developer</b> with a love for
             creating interactive and user-friendly web applications.
+            Enthusiastic about helping others bring their ideas to life by
+            transforming them into impactful web or app solutions.
           </p>
           <div className="buttons">
             <button
