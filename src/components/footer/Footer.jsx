@@ -12,8 +12,7 @@ import {
 const Footer = () => {
   const FBLink = "https://www.facebook.com/ej.suarez.jr.2024";
   const GithubLink = "https://github.com/ArtisTechs";
-  const LinkedInLink =
-    "https://www.linkedin.com/in/estanislao-jose-suarez-015818258/";
+  const LinkedInLink = "https://www.linkedin.com/in/ej-suarez-jr-015818258/";
 
   const handleLinkClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -29,9 +28,9 @@ const Footer = () => {
           <button onClick={() => handleLinkClick(LinkedInLink)}>
             <FontAwesomeIcon icon={faLinkedin} className="link-icon" />
           </button>
-          <button onClick={() => handleLinkClick(FBLink)}>
+          {/* <button onClick={() => handleLinkClick(FBLink)}>
             <FontAwesomeIcon icon={faFacebook} className="link-icon" />
-          </button>
+          </button> */}
         </div>
         <p>
           <span>

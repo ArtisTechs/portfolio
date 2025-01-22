@@ -20,6 +20,7 @@ const HomePage = () => {
         <div className="avatar-container">
           <Gravatar email="suarezestanislaojose@gmail.com" size={200} />
         </div>
+
         <div className="content">
           <h1>Hello, I'm EJ Suarez</h1>
           <p className="w-100">

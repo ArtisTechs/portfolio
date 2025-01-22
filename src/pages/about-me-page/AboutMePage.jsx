@@ -22,12 +22,12 @@ const AboutMePage = () => {
           objectives, driving both technical excellence and strategic success.
         </p>
         <p>
-          While maintaining my full-time job, I'm also eager to work as a
-          freelancer, collaborating with others to enhance my skills and broaden
-          my experience. By freelancing, I hope to help my <b>family</b>{" "}
-          financially, providing them with the support they need while pursuing
-          diverse opportunities to{" "}
-          <b>grow and contribute to exciting projects</b>.
+          I am passionate about actively helping others with their needs or
+          projects, offering support and contributing to meaningful outcomes. By
+          doing so, I aim to grow personally and professionally, support my
+          family financially, and nurture my curiosity about emerging
+          technologies. This approach allows me to embrace diverse challenges,
+          expand my knowledge, and make a positive impact.
         </p>
       </div>
     </div>

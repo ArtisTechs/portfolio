@@ -1,5 +1,4 @@
 import { faCode, faPalette } from "@fortawesome/free-solid-svg-icons";
-import webDevImg1 from "../../assets/img/web-development-1.jpg";
 import webDevImg2 from "../../assets/img/web-development-2.png";
 import webDesignImg1 from "../../assets/img/web-design-1.png";
 

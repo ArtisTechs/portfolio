@@ -24,10 +24,17 @@ const BasicModalContent = ({
   return (
     <div className="basic-modal-content">
       {subtitle && <h1 dangerouslySetInnerHTML={{ __html: subtitle }} />}
-      <div className="basic-modal-icon">
-        <FontAwesomeIcon icon={icon || defaultIcon} size="2x" />
-      </div>
-      {description && <div dangerouslySetInnerHTML={{ __html: description }} />}
+      {icon && (
+        <div className="basic-modal-icon">
+          <FontAwesomeIcon icon={icon || defaultIcon} size="2x" />
+        </div>
+      )}
+      {description && (
+        <div
+          className="mb-3"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
       {images && images.length > 0 && (
         <div className="modal-images-container">
           {images.map((image, index) => (

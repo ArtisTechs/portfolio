@@ -5,7 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./NavBar.css";
 import { SECTIONS } from "../../shared/enum/SectionsEnum";
-import logo from "../../assets/img/artisTechs-logo.svg";
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,8 +42,12 @@ export const NavBar = () => {
           smooth={true}
           duration={10}
         >
-          <img src={logo} alt="ArtisTechs logo" className="main-logo" />
-          rtisTechs
+          <img
+            src="https://res.cloudinary.com/dn2ss9vr7/image/upload/v1737533974/Portfolio%20Assets/rhgru35ovab1dqfsstok.png"
+            alt="ArtisTechs logo"
+            className="main-logo"
+          />
+          ArtisTechs
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
